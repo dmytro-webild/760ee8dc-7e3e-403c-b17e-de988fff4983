@@ -5,40 +5,94 @@ import Button from "@/components/ui/Button";
 import TextAnimation from "@/components/ui/TextAnimation";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
-const plans = [
+const photoPlans = [
   {
-    tag: "Portrait",
-    price: "$500",
-    period: "/session",
-    description: "Perfect for individual portraits or lifestyle moments.",
-    primaryButton: {
-      text: "Book Now",
-      href: "#contact"
-    },
-    featuresTitle: "Included",
-    features: [
-      "60 minute session",
-      "20 edited shots",
-      "Private gallery access"
-    ]
+    tag: "SOLO",
+    price: "$70",
+    period: "per session",
+    description: "Individual portrait or lifestyle shoot.",
+    primaryButton: { text: "Book Your Shoot", href: "#contact" },
+    featuresTitle: "Details",
+    features: ["Solo portrait session", "High-resolution edited photos", "Online gallery delivery"]
   },
   {
-    tag: "Event",
-    price: "$1,200",
-    period: "/event",
-    description: "Full coverage for your engagement, prom, or event.",
-    primaryButton: {
-      text: "Book Now",
-      href: "#contact"
-    },
-    featuresTitle: "Included",
-    features: [
-      "3 hours coverage",
-      "Full gallery access",
-      "48hr delivery promise"
-    ]
+    tag: "DUO",
+    price: "$70",
+    period: "per session",
+    description: "Together / No Individuals.",
+    primaryButton: { text: "Book Your Shoot", href: "#contact" },
+    featuresTitle: "Details",
+    features: ["Couple / Duo posing", "High-resolution edited photos", "Online gallery delivery"]
+  },
+  {
+    tag: "DUO INDIVIDUALS",
+    price: "$140",
+    period: "per session",
+    description: "Together photos + individual portraits for both.",
+    primaryButton: { text: "Book Your Shoot", href: "#contact" },
+    featuresTitle: "Details",
+    features: ["Couple & individual shots", "High-resolution edited photos", "Full gallery access"]
+  },
+  {
+    tag: "GROUP (3+)",
+    price: "$70",
+    period: "per session",
+    description: "Group Photos Only.",
+    primaryButton: { text: "Book Your Shoot", href: "#contact" },
+    featuresTitle: "Details",
+    features: ["3+ people group coverage", "High-resolution edited photos", "Online gallery delivery"]
+  },
+  {
+    tag: "GROUP + INDIVIDUALS",
+    price: "$50",
+    period: "per person",
+    description: "Group photos + individual solo shots for each person.",
+    primaryButton: { text: "Book Your Shoot", href: "#contact" },
+    featuresTitle: "Details",
+    features: ["Group & solo portraits", "Per person pricing", "High-resolution edited photos"]
+  },
+  {
+    tag: "EVENTS",
+    price: "$70",
+    period: "/ HR",
+    description: "Event coverage with online gallery included.",
+    primaryButton: { text: "Book Your Shoot", href: "#contact" },
+    featuresTitle: "Details",
+    features: ["Proms, parties & events", "Hourly event coverage", "Online Gallery Included"]
   }
 ];
+
+const videoPlans = [
+  {
+    tag: "SHORT BTS VINTAGE CLIP",
+    price: "$15",
+    period: "per clip",
+    description: "Aesthetic vintage behind-the-scenes video clip.",
+    primaryButton: { text: "Book Your Shoot", href: "#contact" },
+    featuresTitle: "Details",
+    features: ["Raw vintage aesthetic", "Quick social media format", "Fast turnaround"]
+  },
+  {
+    tag: "BTS VINTAGE EDIT",
+    price: "$40",
+    period: "10–15 Seconds",
+    description: "Cinematic edited vintage short-form video.",
+    primaryButton: { text: "Book Your Shoot", href: "#contact" },
+    featuresTitle: "Details",
+    features: ["10–15 seconds edited video", "Color graded vintage look", "Social media ready"]
+  },
+  {
+    tag: "CAMERAMAN FOR VLOGGING",
+    price: "$50",
+    period: "/ HR",
+    description: "Dedicated videographer coverage for vlogs & events.",
+    primaryButton: { text: "Book Your Shoot", href: "#contact" },
+    featuresTitle: "Details",
+    features: ["Dedicated cameraman", "Hourly videography", "Full video footages"]
+  }
+];
+
+const plans = [...photoPlans, ...videoPlans];
 
 type PricingPlan = {
   tag: string;
